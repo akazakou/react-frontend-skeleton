@@ -1,22 +1,18 @@
-import * as React from 'react';
-import './App.css';
+import * as React from 'react'
+import AppBar from './components/AppBar'
+import getMuiTheme from 'material-ui/styles/getMuiTheme'
+import { MuiThemeProvider, lightBaseTheme } from 'material-ui/styles'
 
-import logo from './logo.svg';
+const lightMuiTheme = getMuiTheme(lightBaseTheme)
 
-class App extends React.Component {
-  public render() {
+class App extends React.Component<any, any> {
+  render () {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      </div>
-    );
+      <MuiThemeProvider muiTheme={lightMuiTheme}>
+        <AppBar/>
+      </MuiThemeProvider>
+    )
   }
 }
 
-export default App;
+export default App
