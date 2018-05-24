@@ -20,9 +20,9 @@ function generateTileData () {
   for (let i = 0; i < 12; i++) {
     data.push({
       id: Math.random(),
-      img: 'https://picsum.photos/500/500/?random',
-      title: 'Image',
-      author: 'author',
+      img: `https://picsum.photos/${Math.floor(Math.random() * 1980) + 400}/${Math.floor(Math.random() * 1980) + 400}/?random`,
+      title: `Image #${i}`,
+      author: `Author #${i}`,
       featured: false
     })
   }
@@ -46,7 +46,7 @@ const GridListExampleSimple = () => (
           subtitle={<span>by <b>{tile.author}</b></span>}
           actionIcon={<IconButton><StarBorder color='white' /></IconButton>}
         >
-          <img src={tile.img} />
+          <img src={tile.img} alt={tile.title} />
         </GridTile>
       ))}
     </GridList>

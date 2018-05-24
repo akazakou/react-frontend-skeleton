@@ -6,12 +6,30 @@ import createHistory from 'history/createBrowserHistory'
 import { Router, Route } from 'react-router'
 import PageHome from './pages/home'
 
-const lightMuiTheme = getMuiTheme(lightBaseTheme)
-
 class App extends React.Component<any, any> {
+  public state = {
+    screenOrientation: true
+  }
+
+  componentDidMount () {
+    const onOrientationChange = () => {
+      this.setState({
+        screenOrientation: !this.state.screenOrientation
+      })
+
+      console.debug('onorientationchange event emited')
+    }
+
+    if (window.hasOwnProperty('onorientationchange')) {
+      window.addEventListener('orientationchange', onOrientationChange, false)
+    } else if (window.hasOwnProperty('onresize')) {
+      window.addEventListener('resize', onOrientationChange, false)
+    }
+  }
+
   render () {
     return (
-      <MuiThemeProvider muiTheme={lightMuiTheme}>
+      <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
         <div>
           <AppBar/>
           <Router history={createHistory()}>
