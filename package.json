@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^1.0.0",
-    "@material-ui/icons": "^1.0.0",
     "history": "^4.7.2",
     "lodash": "^4.17.10",
     "material-ui": "^0.20.1",
@@ -35,8 +33,5 @@
     "@types/redux": "^3.6.31",
     "tslint-config-standard": "^7.0.0",
     "typescript": "^2.8.3"
-  },
-  "resolutions": {
-    "material-ui/core/react-popper": "0.10.1"
   }
 }
