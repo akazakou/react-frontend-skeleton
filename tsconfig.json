@@ -26,5 +26,8 @@
     "webpack",
     "jest",
     "src/setupTests.ts"
-  ]
+  ],
+  "paths": {
+    "react": ["node_modules/@types/react"]
+  }
 }

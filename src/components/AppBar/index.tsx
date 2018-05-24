@@ -4,13 +4,10 @@ import IconButton from 'material-ui/IconButton'
 import IconMenu from 'material-ui/IconMenu'
 import MenuItem from 'material-ui/MenuItem'
 import FlatButton from 'material-ui/FlatButton'
-import Toggle from 'material-ui/Toggle'
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert'
-import NavigationClose from 'material-ui/svg-icons/navigation/close'
+import NavigationClose from 'material-ui/svg-icons/navigation/menu'
 
 class Login extends React.Component {
-  static muiName = 'FlatButton'
-
   render () {
     return (
       <FlatButton {...this.props} label='Login'/>
@@ -19,8 +16,6 @@ class Login extends React.Component {
 }
 
 class Logged extends React.Component {
-  protected muiName = 'IconMenu'
-
   public render () {
     return (
       <IconMenu
@@ -52,20 +47,11 @@ class ApplicationBar extends React.Component {
 
   render () {
     return (
-      <div>
-        <Toggle
-          label='Logged'
-          defaultToggled={true}
-          onToggle={this.handleChange}
-          labelPosition='right'
-          style={{ margin: 20 }}
-        />
-        <AppBar
-          title='Title'
-          iconElementLeft={<IconButton><NavigationClose/></IconButton>}
-          iconElementRight={this.state.logged ? <Logged/> : <Login/>}
-        />
-      </div>
+      <AppBar
+        title='Title'
+        iconElementLeft={<IconButton><NavigationClose/></IconButton>}
+        iconElementRight={this.state.logged ? <Logged/> : <Login/>}
+      />
     )
   }
 }

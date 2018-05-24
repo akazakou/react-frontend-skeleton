@@ -1,15 +1,19 @@
 {
-  "name": "minsk-girls",
+  "name": "date-girls-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "lodash": "^4.17.5",
-    "material-ui": "^0.20.0",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
+    "@material-ui/core": "^1.0.0",
+    "@material-ui/icons": "^1.0.0",
+    "history": "^4.7.2",
+    "lodash": "^4.17.10",
+    "material-ui": "^0.20.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
     "react-redux": "^5.0.7",
     "react-router": "^4.2.0",
-    "react-scripts-ts": "^2.15.1",
+    "react-scripts-ts": "^2.16.0",
     "redux": "^4.0.0"
   },
   "scripts": {
@@ -20,15 +24,19 @@
   },
   "devDependencies": {
     "@types/jest": "^22.2.3",
-    "@types/lodash": "^4.14.107",
-    "@types/material-ui": "^0.21.1",
-    "@types/node": "^9.6.6",
-    "@types/react": "^16.3.12",
+    "@types/lodash": "^4.14.109",
+    "@types/material-ui": "^0.20.0",
+    "@types/node": "^8.10.17",
+    "@types/prop-types": "^15.5.3",
+    "@types/react": "^16.3.14",
     "@types/react-dom": "^16.0.5",
-    "@types/react-redux": "^5.0.16",
-    "@types/react-router": "^4.0.23",
+    "@types/react-redux": "^5.0.20",
+    "@types/react-router": "^4.0.25",
     "@types/redux": "^3.6.31",
     "tslint-config-standard": "^7.0.0",
     "typescript": "^2.8.3"
+  },
+  "resolutions": {
+    "material-ui/core/react-popper": "0.10.1"
   }
 }
