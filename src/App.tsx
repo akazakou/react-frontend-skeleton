@@ -6,6 +6,8 @@ import createHistory from 'history/createBrowserHistory'
 import { Router, Route } from 'react-router'
 import PageHome from './pages/home'
 
+const history = createHistory()
+
 class App extends React.Component<any, any> {
   public state = {
     screenOrientation: true
@@ -32,7 +34,7 @@ class App extends React.Component<any, any> {
       <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
         <div>
           <AppBar/>
-          <Router history={createHistory()}>
+          <Router history={history}>
             <Route path='/' component={PageHome}/>
           </Router>
         </div>
