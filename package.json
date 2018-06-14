@@ -12,7 +12,8 @@
     "react-redux": "^5.0.7",
     "react-router": "^4.2.0",
     "react-scripts-ts": "^2.16.0",
-    "redux": "^4.0.0"
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.1.0"
   },
   "scripts": {
     "start": "react-scripts-ts start",
@@ -31,6 +32,7 @@
     "@types/react-redux": "^5.0.20",
     "@types/react-router": "^4.0.25",
     "@types/redux": "^3.6.31",
+    "@types/redux-thunk": "^2.1.0",
     "tslint-config-standard": "^7.0.0",
     "typescript": "^2.8.3"
   }

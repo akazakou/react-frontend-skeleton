@@ -6,6 +6,7 @@ import MenuItem from 'material-ui/MenuItem'
 import FlatButton from 'material-ui/FlatButton'
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert'
 import NavigationClose from 'material-ui/svg-icons/navigation/menu'
+import './index.css'
 
 class Login extends React.Component {
   render () {
@@ -51,6 +52,7 @@ class ApplicationBar extends React.Component {
         title='Title'
         iconElementLeft={<IconButton><NavigationClose/></IconButton>}
         iconElementRight={this.state.logged ? <Logged/> : <Login/>}
+        className='src_components_AppBar_className'
       />
     )
   }
