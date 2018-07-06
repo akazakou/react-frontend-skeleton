@@ -1,12 +1,8 @@
 {
   "extends": ["tslint-config-standard"],
-  "rules": {
-    "no-unused-variables": true
-  },
   "linterOptions": {
     "exclude": [
-      "config/**/*.js",
-      "node_modules/**/*"
+      "node_modules"
     ]
   }
 }
