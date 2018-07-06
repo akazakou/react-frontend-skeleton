@@ -18,9 +18,14 @@
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "paths": {
-      "store/*": ["src/store/*"],
+      "common/*": ["src/common/*"],
       "components/*": ["src/components/*"],
-      "common/*": ["src/common/*"]
+      "pages/*": ["src/pages/*"],
+      "store/*": ["src/store/*"],
+      "actions/*": ["src/store/actions/*"],
+      "commands/*": ["src/store/commands/*"],
+      "reducers/*": ["src/store/reducers/*"],
+      "selectors/*": ["src/store/selectors/*"]
     }
   },
   "exclude": [

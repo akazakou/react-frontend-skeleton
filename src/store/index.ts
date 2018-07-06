@@ -8,8 +8,8 @@ import {
   Store
 } from 'redux'
 import thunk from 'redux-thunk'
-import { default as userInterface, IUserInterface } from './reducers/userInterface'
-import { IAction as userInterfaceActions } from './actions/userInterface'
+import { default as userInterface, IUserInterface } from 'reducers/userInterface'
+import { IAction as userInterfaceActions } from 'actions/userInterface'
 
 declare const window: Window & {
   __REDUX_DEVTOOLS_EXTENSION_COMPOSE__? (arguments: any): StoreEnhancer<any, any>

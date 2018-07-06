@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import { default as userInterface } from './reducers/userInterface'
+import { default as userInterface } from 'reducers/userInterface'
 
 const appReducer = combineReducers({
   userInterface

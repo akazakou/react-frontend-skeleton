@@ -1,5 +1,5 @@
 import { createSelector } from 'reselect'
-import { IUserInterface, LeftMenuType } from '../reducers/userInterface'
+import { IUserInterface, LeftMenuType } from 'reducers/userInterface'
 import { IState } from '../index'
 
 const getUserInterface = createSelector(

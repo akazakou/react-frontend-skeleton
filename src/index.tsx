@@ -4,8 +4,8 @@ import registerServiceWorker from './registerServiceWorker'
 import { Router, Route } from 'react-router'
 import { Provider as ReduxStoreProvider } from 'react-redux'
 import createHistory from 'history/createBrowserHistory'
-import PageHome from './pages/home'
-import store from './store'
+import PageHome from 'pages/home'
+import store from 'store/index'
 import { History } from 'history'
 
 declare const module: NodeModule & {

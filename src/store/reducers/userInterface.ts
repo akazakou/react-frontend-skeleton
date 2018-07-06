@@ -1,4 +1,4 @@
-import { types } from '../actions/userInterface'
+import { types } from 'actions/userInterface'
 import { genericReducer } from 'common/reducers'
 
 /**
