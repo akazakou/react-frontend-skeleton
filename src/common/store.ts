@@ -91,34 +91,12 @@ interface List {
  */
 type Payload = object | Scalar | Array<object | Scalar>
 
-/**
- * Return action data format
- */
-interface ActionData {
-  /**
-   * Action Type
-   */
-  type: string
-
-  /**
-   * Action payload data
-   */
-  payload: Payload | any
-}
-
-/**
- * Action function description
- */
-type Action = (...data: Array<Payload>) => ActionData
-
 export {
   Status,
   StatusPayload,
   Metadata,
   Entity,
   List,
-  Action,
   EntityData,
-  Payload,
-  ActionData
+  Payload
 }

@@ -1,13 +1,15 @@
 import { types } from '../actions/userInterface'
-import { genericReducer } from '../../common/reducers'
+import { genericReducer } from 'common/reducers'
 
 /**
  * Description of user interface state
  */
+type LeftMenuType = {
+  display: boolean
+}
+
 interface IUserInterface {
-  leftMenu: {
-    display: boolean
-  }
+  leftMenu: LeftMenuType
 }
 
 /**
@@ -49,6 +51,21 @@ const reductions = {
         display: false
       }
     }
+  },
+
+  /**
+   * Toggle left menu user interface
+   * @param {IUserInterface} state
+   * @returns {IUserInterface}
+   */
+  [types.leftMenuToggle]: (state: IUserInterface): IUserInterface => {
+    return {
+      ...state,
+      leftMenu: {
+        ...state.leftMenu,
+        display: !state.leftMenu.display
+      }
+    }
   }
 }
 
@@ -56,6 +73,8 @@ export default genericReducer(initialState, reductions)
 
 export {
   reductions,
-  IUserInterface,
-  initialState
+  initialState,
+
+  LeftMenuType,
+  IUserInterface
 }

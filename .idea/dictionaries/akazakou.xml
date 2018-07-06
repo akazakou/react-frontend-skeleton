@@ -1,7 +1,10 @@
 <component name="ProjectDictionaryState">
   <dictionary name="akazakou">
     <words>
+      <w>devtools</w>
       <w>linter</w>
+      <w>middlewares</w>
+      <w>redux</w>
       <w>tslint</w>
     </words>
   </dictionary>
