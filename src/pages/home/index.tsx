@@ -1,3 +1,10 @@
-export { default as Component } from './component'
-export { default as Container } from './container'
-export { default } from './container'
+import * as React from 'react'
+import ApplicationBar from 'components/appBar'
+
+const Home: React.StatelessComponent = () => (
+  <div>
+    <ApplicationBar />
+  </div>
+)
+
+export default Home
