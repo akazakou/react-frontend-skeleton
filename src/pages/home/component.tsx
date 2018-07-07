@@ -6,6 +6,9 @@ import ApplicationBar from 'components/appBar'
 const Home: React.StatelessComponent = ({ toggle, isDisplayed }: IMapStateToProps & IMapDispatchToProps) => (
   <div>
     <ApplicationBar />
+    <div>
+      <h1>test</h1>
+    </div>
   </div>
 )
 
