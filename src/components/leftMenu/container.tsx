@@ -1,8 +1,8 @@
 import { connect } from 'react-redux'
 import { Action, Dispatch } from 'redux'
 import { IState } from 'store/index'
-import { userInterfaceLeftMenuToggle, leftMenuToggleType } from 'store/actions/userInterface'
-import { getUserInterfaceLeftMenuDisplay } from 'store/selectors/userInterface'
+import { userInterfaceLeftMenuToggle, leftMenuToggleType } from 'actions/userInterface'
+import { getUserInterfaceLeftMenuDisplay } from 'selectors/userInterface'
 import component from './component'
 
 interface IMapStateToProps {

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { Action, Dispatch } from 'redux'
-import { userInterfaceLeftMenuToggle, leftMenuToggleType } from 'store/actions/userInterface'
+import { userInterfaceLeftMenuToggle, leftMenuToggleType } from 'actions/userInterface'
 import component from './component'
 
 interface IMapDispatchToProps {

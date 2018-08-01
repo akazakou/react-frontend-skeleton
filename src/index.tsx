@@ -5,6 +5,7 @@ import { Router, Route } from 'react-router'
 import { Provider as ReduxStoreProvider } from 'react-redux'
 import createHistory from 'history/createBrowserHistory'
 import PageHome from 'pages/home'
+import PageRegistration from 'pages/registration'
 import store from 'store/index'
 import { History } from 'history'
 
@@ -39,7 +40,10 @@ class App extends React.Component<any, any> {
     return (
       <ReduxStoreProvider store={store}>
         <Router history={history}>
-          <Route path='/' component={PageHome}/>
+          <div>
+            <Route exact path='/' component={PageHome}/>
+            <Route exact path='/registration' component={PageRegistration}/>
+          </div>
         </Router>
       </ReduxStoreProvider>
     )
